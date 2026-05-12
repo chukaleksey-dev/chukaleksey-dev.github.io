@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои страницы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(100%, 720px);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .intro {
+      margin: 0 0 24px;
+      text-align: center;
+      font-size: 18px;
+      color: #4a5568;
+    }
+
+    ul {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      padding: 18px 20px;
+      border: 2px solid #d7dfec;
+      border-radius: 8px;
+      color: #172033;
+      background: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 700;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    a:hover,
+    a:focus {
+      border-color: #2f73f6;
+      box-shadow: 0 8px 18px rgba(47, 115, 246, 0.14);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    span {
+      display: block;
+      margin-top: 6px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #5b6678;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Мои страницы</h1>
+    <p class="intro">Список опубликованных учебных страниц</p>
+
+    <ul>
+      <li>
+        <a href="https://chukaleksey-dev.github.io/textarea/">
+          Textarea
+          <span>Два текстовых поля: текст из левого появляется в правом</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://chukaleksey-dev.github.io/textarea_button/">
+          Textarea Button
+          <span>Одно текстовое поле, кнопка и вывод текста в абзац</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>
